@@ -5,8 +5,15 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'name' => 'Open Data',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => [
+        'log',
+        [
+            'class' => 'umbalaconmeogia\i18nui\components\LanguageSelector',
+            'supportedLanguages' => ['vi', 'en', 'ja'],
+        ],
+    ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -52,6 +59,17 @@ $config = [
         */
     ],
     'params' => $params,
+];
+
+$config['modules']['i18nui'] = [
+    'class' => 'umbalaconmeogia\i18nui\Module',
+    'languages' => ['en', 'ja', 'vi'], // Any languages that you want to use
+];
+$config['modules']['japanzipcodecsv'] = [
+    'class' => 'umbalaconmeogia\japanzipcodecsv\Module',
+];
+$config['modules']['japancorpnum'] = [
+    'class' => 'umbalaconmeogia\japancorpnum\Module',
 ];
 
 if (YII_ENV_DEV) {
