@@ -18,4 +18,7 @@
  */
 return [
     'Language' => '',
+    'Open {name}' => '',
+    'Welcome to Open Data' => '',
+    'Here you can see some data opened publicly.' => '',
 ];

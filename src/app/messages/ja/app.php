@@ -18,4 +18,7 @@
  */
 return [
     'Language' => '言語',
+    'Open {name}' => '{name}を開く',
+    'Welcome to Open Data' => 'Open Dataよこそう',
+    'Here you can see some data opened publicly.' => 'ここでいくつの公開されるデータが閲覧できる。',
 ];

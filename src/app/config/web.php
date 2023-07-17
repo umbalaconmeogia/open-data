@@ -68,8 +68,8 @@ $config['modules']['i18nui'] = [
 $config['modules']['japanzipcodecsv'] = [
     'class' => 'umbalaconmeogia\japanzipcodecsv\Module',
 ];
-$config['modules']['japancorpnum'] = [
-    'class' => 'umbalaconmeogia\japancorpnum\Module',
+$config['modules']['japancorpnumcsv'] = [
+    'class' => 'umbalaconmeogia\japancorpnumcsv\Module',
 ];
 
 if (YII_ENV_DEV) {

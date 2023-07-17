@@ -18,4 +18,7 @@
  */
 return [
     'Language' => 'Ngôn ngữ',
+    'Open {name}' => 'Mở {name}',
+    'Welcome to Open Data' => 'Chào mừng đến với Open Data',
+    'Here you can see some data opened publicly.' => 'Tại đây bạn có thể tham khảo một số thông tin được công bố mở.',
 ];

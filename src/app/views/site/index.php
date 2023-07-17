@@ -2,20 +2,26 @@
 
 /** @var yii\web\View $this */
 
+use yii\helpers\Markdown;
+
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4">Welcome to Open Data!</h1>
+        <h1 class="display-4"><?= Yii::t('app', 'Welcome to Open Data') ?></h1>
 
-        <p class="lead">Here you can see some data opened publicly.</p>
+        <p class="lead"><?= Yii::t('app', 'Here you can see some data opened publicly.') ?></p>
     </div>
 
     <div class="body-content">
-    <!--
 
         <div class="row">
+            <?php
+                echo $this->render('_introModule', ['module' => Yii::$app->getModule('japanzipcodecsv')]);
+                echo $this->render('_introModule', ['module' => Yii::$app->getModule('japancorpnumcsv')]);
+            ?>
+            <!--
             <div class="col-lg-4 mb-3">
                 <h2>Heading</h2>
 
@@ -46,7 +52,7 @@ $this->title = 'My Yii Application';
 
                 <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
             </div>
+            -->
         </div>
-    -->
     </div>
 </div>

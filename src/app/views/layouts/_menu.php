@@ -23,8 +23,8 @@ foreach ($languages as $langCode => $langName) {
     $languageMenuItems[] = ['label' => $langName, 'url' => Url::to(['/i18nui/default/set-language', 'language' => $langCode, 'callbackUrl' => $callbackUrl])];
 }
 
-$menuItems[] = ['label' => 'ZipcodeCsv', 'url' => ['/japanzipcodecsv/zipcode/index']];
-$menuItems[] = ['label' => 'CorporateNubmerCsv', 'url' => ['/japancorpnum/intro/index']];
+$menuItems[] = ['label' => 'ZipcodeCsv', 'url' => ['/japanzipcodecsv/intro/index']];
+$menuItems[] = ['label' => 'CorporateNubmerCsv', 'url' => ['/japancorpnumcsv/intro/index']];
 
 $menuItems[] = [
     'label' => Yii::t('app', 'Language'),
